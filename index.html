@@ -51,7 +51,7 @@ body{font-family:-apple-system,sans-serif;background:#070b18;color:#fff;padding:
   <div class="mid-text">Gold holding support, BTC strong, GBP/EUR watching key levels. Daily educational insights in private channel.</div>
 </div>
 <button class="btn btn-outline" onclick="openChannel()">🚀 LEARN MORE</button>
-<button class="btn btn-green" onclick="openNewBot()">⭐ FREE SIGNALS</button>
+<button class="btn btn-green" onclick="openOldBot()">⭐ FREE SIGNALS</button>
 <button class="btn btn-green" onclick="openWhatsApp()">💬 CONTACT WHATSAPP</button>
 <div class="footer">Secure • Trusted • Official</div>
 </div>
@@ -63,9 +63,9 @@ function openChannel(){
   const url = "https://t.me/+ojoEHYtuzIdjOThk";
   if(tg.openTelegramLink){ tg.openTelegramLink(url); } else { window.open(url, "_blank"); }
 }
-function openNewBot(){
-  // صرف یہ بوٹ چینج کیا ہے - پرانا ختم، نیا @mansoorali122bot
-  const url = "https://t.me/mansoorali122bot?startapp=learnmore";
+function openOldBot(){
+  // پہلا والا اصلی بوٹ واپس - Pixel کے لیے صحیح
+  const url = "https://t.me/Greenpipstradinviwebot?startapp=learnmore";
   if(tg.openTelegramLink){ tg.openTelegramLink(url); } else { window.open(url, "_blank"); }
 }
 function openWhatsApp(){
