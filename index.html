@@ -3,38 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Pips Trading View - Mr_JordanFx</title>
+<title>Green Pips Trading View</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,sans-serif;background:#070b18;color:#fff;padding:15px;display:flex;justify-content:center}
-.box{width:100%;max-width:360px;background:#12182e;border:1px solid #1e2a4a;border-radius:20px;padding:18px}
-.top{display:flex;align-items:center;gap:10px;margin-bottom:12px}
-.logo{width:36px;height:36px;background:#22c55e;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
-h1{font-size:16px;font-weight:800}
-.sub{font-size:10px;color:#8a97b5}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
-.card{background:#0e1426;border:1px solid #1e2a4a;border-radius:10px;padding:10px}
+body{font-family:-apple-system,sans-serif;background:#070b18;color:#fff;padding:0;display:flex;justify-content:center;min-height:100vh}
+.main{width:100%;max-width:400px;padding:20px}
+.card-box{background:#121a33;border:1px solid #1e2a4a;border-radius:20px;padding:16px}
+.header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.icon{width:42px;height:42px;background:#22c55e;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.title{font-size:17px;font-weight:800;line-height:1.2}
+.sub{font-size:11px;color:#8a97b5}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.item{background:#0e1426;border:1px solid #1e2a4a;border-radius:12px;padding:12px}
 .pair{font-size:10px;color:#8a97b5;font-weight:700}
-.price{font-size:16px;font-weight:900;margin:3px 0}
+.price{font-size:18px;font-weight:900;margin:4px 0}
+.ch{font-size:11px}
 .green{color:#22c55e}
 .red{color:#ef4444}
-.info{background:#0e1426;border:1px solid #1e2a4a;border-radius:10px;padding:10px;margin-bottom:14px}
-.info-title{font-size:11px;font-weight:800;color:#22c55e;margin-bottom:6px}
-.info-text{font-size:11px;color:#a8b5d0;line-height:1.5}
-.btn{width:100%;display:block;padding:17px;border-radius:14px;text-align:center;font-weight:800;font-size:16px;border:none;cursor:pointer;margin-bottom:11px;letter-spacing:0.3px}
-.btn-learn{background:transparent;border:2px solid #22c55e;color:#22c55e}
-.btn-free{background:#22c55e;color:#000;box-shadow:0 4px 15px rgba(34,197,94,0.3)}
-.btn-wa{background:#25D366;color:#000;box-shadow:0 4px 15px rgba(37,211,102,0.3);margin-bottom:0}
-.footer{text-align:center;font-size:9px;color:#3a4562;margin-top:12px}
+.mid{background:#0e1426;border:1px solid #1e2a4a;border-radius:12px;padding:12px;margin-bottom:14px}
+.mid-title{font-size:11px;font-weight:800;color:#22c55e;margin-bottom:5px;line-height:1.3}
+.mid-text{font-size:12px;color:#a8b5d0;line-height:1.5}
+.btn{width:100%;display:block;padding:14px;border-radius:14px;text-align:center;font-weight:800;font-size:14px;border:none;cursor:pointer;margin-bottom:10px}
+.btn-outline{background:transparent;border:2px solid #22c55e;color:#22c55e}
+.btn-green{background:#22c55e;color:#000}
+.footer{text-align:center;font-size:10px;color:#3a4562;margin-top:8px}
 </style>
 </head>
 <body>
-<div class="box">
-<div class="top">
-  <div class="logo">📈</div>
+<div class="main">
+<div class="card-box">
+<div class="header">
+  <div class="icon">📈</div>
   <div>
-    <h1>Green Pips Trading View</h1>
-    <div class="sub">Mr_JordanFx • Daily 5-7 Signals • GOLD • BTC • GBP • EUR</div>
+    <div class="title">Green Pips Trading View</div>
+    <div class="sub">Daily 5-7 Signals • GOLD • BTC • GBP • EUR</div>
   </div>
-</div
+</div>
+<div class="grid">
+  <div class="item"><div class="pair">🟡 XAUUSD GOLD</div><div class="price">$2,738.45</div><div class="ch green">▲ +1.24% Bullish</div></div>
+  <div class="item"><div class="pair">₿ BTCUSD</div><div class="price">$68,192</div><div class="ch green">▲ +2.18% Strong</div></div>
+  <div class="item"><div class="pair">💷 GBPUSD</div><div class="price">1.2974</div><div class="ch red">▼ -0.31% Bearish</div></div>
+  <div class="item"><div class="pair">💶 EURUSD</div><div class="price">1.0928</div><div class="ch red">▼ -0.22% Range</div></div>
+</div>
+<div class="mid">
+  <div class="mid-title">DAILY 5-7 PREMIUM SIGNALS • XAUUSD • BTCUSD • GBPUSD • EURUSD</div>
+  <div class="mid-text">Gold holding support, BTC strong, GBP/EUR watching key levels. Daily educational insights in private channel.</div>
+</div>
+<button class="btn btn-outline" onclick="openChannel()">🚀 LEARN MORE</button>
+<button class="btn btn-green" onclick="openNewBot()">⭐ FREE SIGNALS</button>
+<button class="btn btn-green" onclick="openWhatsApp()">💬 CONTACT WHATSAPP</button>
+<div class="footer">Secure • Trusted • Official</div>
+</div>
+</div>
+<script>
+const tg = window.Telegram.WebApp;
+tg.ready();
+function openChannel(){
+  const url = "https://t.me/+ojoEHYtuzIdjOThk";
+  if(tg.openTelegramLink){ tg.openTelegramLink(url); } else { window.open(url, "_blank"); }
+}
+function openNewBot(){
+  // صرف یہ بوٹ چینج کیا ہے - پرانا ختم، نیا @mansoorali122bot
+  const url = "https://t.me/mansoorali122bot?startapp=learnmore";
+  if(tg.openTelegramLink){ tg.openTelegramLink(url); } else { window.open(url, "_blank"); }
+}
+function openWhatsApp(){
+  const url = "https://wa.me/447435629881?text=Hi%20Green%20Pips%20Trading%20View";
+  if(tg.openLink){ tg.openLink(url, {try_instant_view:false}); } else { window.open(url, "_blank"); }
+}
+</script>
+</body>
+</html>
