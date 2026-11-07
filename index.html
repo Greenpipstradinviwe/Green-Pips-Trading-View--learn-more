@@ -5,50 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Green Pips Trading View</title>
 <style>
-* { box-sizing: border-box; }
-body{margin:0;background:#020615;font-family:Arial,sans-serif;display:flex;justify-content:center;padding:12px;min-height:100vh}
-.card{width:100%;max-width:400px;background:#0d1126;border-radius:24px;padding:16px 16px 20px 16px;border:1px solid #1e2a4a}
-.header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-.icon{width:48px;height:48px;background:#00c853;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:26px}
-.title h2{margin:0;color:#fff;font-size:19px}
-.title p{margin:2px 0 0 0;color:#8b9cc5;font-size:11px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
-.box{background:#151c36;border-radius:14px;padding:12px;border:1px solid #1e2a4a}
-.label{font-size:10px;color:#8b9cc5}
-.price{font-size:20px;color:#fff;font-weight:800;margin:4px 0}
-.green{color:#00e676}.red{color:#ff5252}
-.info{background:#111a33;border-radius:14px;padding:14px;margin-bottom:16px;border:1px solid #1e2a4a}
-.head{color:#00e676;font-size:11px;font-weight:800}
-.text{color:#a3b1d1;font-size:12px;line-height:1.6;margin-top:8px}
-.wa-line{margin-top:10px;color:#a3b1d1;font-size:13px}
-.btn{display:flex;align-items:center;justify-content:center;width:100%;padding:16px;border-radius:50px;text-align:center;text-decoration:none;font-weight:800;font-size:15px;margin-bottom:12px}
-.btn-outline{background:transparent;border:2px solid #00e676;color:#00e676}
-.btn-green{background:#00e676;color:#000;border:2px solid #00e676}
-.btn-wa{background:#25D366;color:#000;border:2px solid #25D366}
-.footer{text-align:center;color:#4a5a7d;font-size:10px;margin-top:10px;letter-spacing:1px}
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+  body{background:#000;color:#fff;text-align:center;padding:20px}
+  .card{background:#0a0f0a;border:1px solid #1f3d1f;border-radius:25px;padding:25px;max-width:420px;margin:auto}
+  .circle{width:150px;height:150px;margin:10px auto;border-radius:50%;background:linear-gradient(180deg,#FFD700,#FF8C00);display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px #FFD700;font-size:32px;font-weight:900;color:#0a7a2e}
+  h1{font-size:36px;line-height:1.1} h1 span{color:#2ee66b}
+  .sub{color:#ccc;font-size:13px;letter-spacing:1px;margin:8px 0 18px}
+  .stats{display:flex;gap:10px;justify-content:center;margin:15px 0}
+  .stat{background:#222;border:1px solid #333;border-radius:15px;padding:12px;flex:1}
+  .stat b{color:#2ee66b;font-size:22px} .stat p{font-size:12px;color:#aaa;margin-top:4px}
+  .desc{font-size:14px;color:#ddd;line-height:1.6;margin:15px 0 20px}
+  .btn{display:block;text-decoration:none;background:#2ee66b;color:#000;font-weight:800;padding:16px;border-radius:50px;margin:12px 0;font-size:17px}
+  .btn.outline{background:#000;color:#2ee66b;border:2px solid #2ee66b}
+  .bot{color:#888;font-size:12px;margin-top:15px}
 </style>
 </head>
 <body>
-<div class="card">
-<div class="header"><div class="icon">📈</div><div class="title"><h2>Green Pips Trading View</h2><p>Daily 5-7 Signals • GOLD • BTC • GBP • EUR</p></div></div>
-<div class="grid">
-<div class="box"><div class="label">🟡 XAUUSD GOLD</div><div class="price">$2,738.45</div><div class="green">▲ +1.24% Bullish</div></div>
-<div class="box"><div class="label">₿ BTCUSD</div><div class="price">$68,192</div><div class="green">▲ +2.18% Strong</div></div>
-<div class="box"><div class="label">🇬🇧 GBPUSD</div><div class="price">1.2974</div><div class="red">▼ -0.31% Bearish</div></div>
-<div class="box"><div class="label">🇪🇺 EURUSD</div><div class="price">1.0928</div><div class="red">▼ -0.22% Range</div></div>
-</div>
-<div class="info">
-<div class="head">DAILY 5-7 PREMIUM SIGNALS • XAUUSD • BTCUSD • GBPUSD • EURUSD</div>
-<div class="text">Gold holding support, BTC strong, GBP/EUR watching key levels. Daily educational insights in private channel.</div>
-<div class="wa-line">👤 WhatsApp: JordanFx_551<br>📞 +44 7435 629881</div>
-</div>
+  <div class="card">
+    <div class="circle">GREEN</div>
+    <h1>GREEN PIPS<br><span>TRADING VIEW</span></h1>
+    <div class="sub">DAILY 5-7 SIGNALS GOLD • BTC • GBP • EUR</div>
+    <div class="stats">
+      <div class="stat"><b>5-7</b><p>Daily Signals</p></div>
+      <div class="stat"><b>97%</b><p>Accuracy</p></div>
+      <div class="stat"><b>24/7</b><p>Support</p></div>
+    </div>
+    <div class="desc">Professional market trading signals with premium analysis.<br>Join our VIP community now.</div>
 
-<!-- 3 BUTTONS - ALL WORKING -->
-<a class="btn btn-outline" href="https://t.me/+HUc6KAqPROI4Nzdk" target="_blank">🚀 LEARN MORE</a>
-<a class="btn btn-green" href="https://t.me/+HUc6KAqPROI4Nzdk" target="_blank">⭐ FREE SIGNALS</a>
-<a class="btn btn-wa" href="https://wa.me/447435629881?text=Hi%20JordanFx_551%20-%20I%20want%20to%20join%20Green%20Pips" target="_blank">💬 CONTACT WHATSAPP</a>
+    <!-- 3 BUTTONS -->
+    <a class="btn" href="https://t.me/+sm8JVKn-y7plMmZk" target="_blank">Learn More →</a>
+    <a class="btn" href="https://t.me/+sm8JVKn-y7plMmZk" target="_blank">✓ Free Signals</a>
+    <a class="btn outline" href="https://wa.me/447435629881?text=Hi%20Green%20Pips%20Trading%20View%2C%20I%20want%20Free%20Signals" target="_blank">✓ Contact WhatsApp</a>
 
-<div class="footer">Secure • Trusted • Official<br>Open Link: +HUc6KAqPROI4Nzdk • @Greenpipstradinviwebot</div>
-</div>
+    <div class="bot">@Greenpipstradinviwebot</div>
+  </div>
 </body>
 </html>
